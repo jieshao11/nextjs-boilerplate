@@ -1,0 +1,264 @@
+/* Light Mode (Default Styles) */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    /* Other base styles are in style.css */
+}
+
+header {
+    background-color: #f0f0f0; /* Default from style.css */
+    border-bottom: 1px solid #ddd; /* Subtle border for header */
+}
+
+nav a {
+    color: #333; /* Default from style.css */
+}
+
+nav a:hover {
+    color: #007bff; /* Example hover color */
+    /* background-color is handled in style.css for light mode */
+}
+
+.page-title {
+    color: #333; /* Default from style.css */
+}
+
+#welcome-section.hero {
+    background-color: #e9e9e9; /* Default from style.css */
+    color: #333; /* Default from style.css */
+}
+
+.preview-card,
+.resource-item,
+.news-item,
+.benefit-card { /* General cards */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.premium-item-card { /* Specific override for premium card */
+    background-color: #ffffff; /* Whiter for premium feel */
+    border: 1px solid #e0e0e0; /* Slightly softer border for premium */
+    color: #333;
+}
+
+
+.preview-card h3 a,
+.resource-item h3, /* Default card title color */
+.news-item h3 {
+    color: #333;
+}
+.preview-card h3 a { /* Specific link color in card title */
+    color: #007bff;
+}
+.benefit-card h4 { /* Specific color for benefit card titles */
+    color: #007bff;
+}
+.premium-item-card h3 { /* Specific color for premium card titles */
+    color: #222;
+}
+
+
+.preview-card p,
+.resource-item p,
+.news-summary, /* Covers news-item p */
+.benefit-card p {
+    color: #555; /* Default for most card paragraph text */
+}
+.premium-item-card .item-description { /* Specific for premium card description */
+    color: #666;
+}
+
+
+.cta-button, /* Covers learn-more-button through style.css */
+.resource-link {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.cta-button:hover,
+.resource-link:hover {
+    background-color: #0056b3;
+}
+
+#theme-toggle-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.premium-badge {
+    background-color: #ffd700;
+    color: #333;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Slightly darker base for more depth */
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e; /* Darker header */
+    border-bottom: 1px solid #333; /* Adjusted border for contrast */
+}
+
+body.dark-mode nav a {
+    color: #d0d0d0;
+}
+
+body.dark-mode nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08); /* Subtle background on hover for dark mode */
+}
+
+body.dark-mode .page-title {
+    color: #f5f5f5;
+}
+
+body.dark-mode #welcome-section.hero {
+    background-color: #1e1e1e; /* Consistent dark section background */
+    color: #e0e0e0;
+}
+
+body.dark-mode .preview-card,
+body.dark-mode .resource-item,
+body.dark-mode .news-item,
+body.dark-mode .benefit-card,
+body.dark-mode .premium-item-card { /* Unified card styling for dark mode */
+    background-color: #2a2a2a; /* Slightly lighter than body, but dark */
+    border: 1px solid #444444;
+    color: #c0c0c0; /* General text color for cards in dark mode */
+}
+
+body.dark-mode .preview-card h3 a, /* Card titles / links in dark mode */
+body.dark-mode .resource-item h3,
+body.dark-mode .news-item h3,
+body.dark-mode .benefit-card h4, /* This was already specifically colored */
+body.dark-mode .premium-item-card h3 {
+    color: #e8e8e8; /* Light color for titles for readability */
+}
+body.dark-mode .benefit-card h4 { /* Keep specific accent if desired */
+    color: #87ceeb; /* Sky blue or similar for emphasis, as before */
+}
+
+
+body.dark-mode .preview-card p,
+body.dark-mode .resource-item p,
+body.dark-mode .news-summary,
+body.dark-mode .benefit-card p,
+body.dark-mode .premium-item-card .item-description {
+    color: #b0b0b0; /* Lighter grey for paragraph text for readability */
+}
+
+body.dark-mode .cta-button,
+body.dark-mode .resource-link,
+body.dark-mode .learn-more-button { /* Buttons in dark mode */
+    background-color: #0066cc; /* Slightly brighter blue for dark mode buttons */
+    color: #ffffff;
+    /* border-color: #0056b3; Optional: if buttons have borders, adjust for dark theme */
+}
+
+body.dark-mode .cta-button:hover,
+body.dark-mode .resource-link:hover,
+body.dark-mode .learn-more-button:hover {
+    background-color: #0052a3; /* Darker shade on hover */
+}
+
+body.dark-mode #theme-toggle-button {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.dark-mode .premium-badge {
+    background-color: #b8860b; /* Darker gold for premium badge in dark mode */
+    color: #f0f0f0; /* Lighter text on darker gold */
+}
+
+/* Specific text colors for dark mode that might have been missed */
+body.dark-mode header h1 { color: #f5f5f5; }
+body.dark-mode header p { color: #b0b0b0; } /* Subtitle in header */
+
+body.dark-mode #purpose-section h2,
+body.dark-mode #previews-section h2,
+body.dark-mode .community-section h3 {
+    color: #f5f5f5;
+}
+
+body.dark-mode #purpose-section p,
+body.dark-mode .community-section p,
+body.dark-mode .community-section ul li { /* Ensure list items inherit correctly */
+    color: #b0b0b0;
+}
+
+body.dark-mode .news-meta {
+    color: #999999; /* Lighter grey for meta text in dark mode */
+}
+
+body.dark-mode .item-image-placeholder { /* Image placeholder in dark mode */
+    background-color: #252525;
+    border-color: #444;
+    color: #777;
+}
+
+/* General Link Styling in Dark Mode (if not overridden by more specific selectors) */
+body.dark-mode a {
+    color: #87ceeb; /* Sky blue for general links */
+}
+body.dark-mode a:hover {
+    color: #add8e6; /* Lighter blue on hover */
+}
+
+/* --- Overrides for specific links to maintain their intended styles --- */
+
+/* Nav links should maintain their specific dark mode colors */
+body.dark-mode nav a {
+    color: #d0d0d0;
+}
+body.dark-mode nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08); /* Re-apply specific hover */
+}
+
+/* Card title links and news links */
+body.dark-mode .preview-card h3 a,
+body.dark-mode .news-link {
+    color: #87ceeb; /* Consistent with general link color */
+}
+body.dark-mode .preview-card h3 a:hover,
+body.dark-mode .news-link:hover {
+    color: #add8e6;
+    text-decoration: underline; /* Ensure underline on hover for these specific links */
+}
+
+/* Buttons styled as <a> tags should retain their button-specific text color */
+body.dark-mode .cta-button,
+body.dark-mode .resource-link,
+body.dark-mode .learn-more-button {
+    color: #ffffff; /* Keep button text white */
+}
+body.dark-mode .cta-button:hover,
+body.dark-mode .resource-link:hover,
+body.dark-mode .learn-more-button:hover {
+    color: #ffffff; /* Keep button text white on hover */
+}
+
+/* Input/Textarea placeholder (if added later) */
+/*
+body.dark-mode input[type="text"]::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #777;
+}
+*/
+
+/* Footer placeholder (if added later) */
+/*
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-top: 1px solid #333;
+}
+*/
